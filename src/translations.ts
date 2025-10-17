@@ -1,23 +1,45 @@
 // src/i18n.ts
 export type Language = "fr" | "en";
 
+type Navbar = {
+  home: string;
+  about: string;
+  projects: string;
+  skills: string;
+};
+
+type Translation = {
+  language: string;
+  h1: string;
+  h2: string;
+  navbar: Navbar;
+};
+
 type Translations = {
-  [key in Language]: Record<string, string>;
+  [key in Language]: Translation;
 };
 
 export const translations: Translations = {
   fr: {
     language: "Français",
-    texte: `Bonjour ! Je m'appelle Alex Dupont, passionné par le développement web et les nouvelles technologies.
-Depuis plus de 5 ans, je crée des sites et applications performants, alliant design moderne et expérience utilisateur fluide.
-Curieux et autonome, j’aime relever de nouveaux défis et apprendre constamment pour améliorer mes compétences.
-Quand je ne code pas, je me consacre à la photographie et aux voyages.`
+    h1: `Bienvenue sur mon portfolio`,
+    h2: `Je suis Andréa DUHAMEL, développeur web passionné par la création de sites et d'applications web.`,
+    navbar: {
+      home: "Accueil",
+      about: "A propos",
+      projects: "Projets",
+      skills: "Competences",
+    },
   },
   en: {
     language: "English",
-    texte: `Hello! My name is Alex Dupont, passionate about web development and emerging technologies.
-For over 5 years, I have been building high-performance websites and applications, combining modern design with smooth user experiences.
-Curious and self-motivated, I enjoy tackling new challenges and constantly learning to improve my skills.
-When I'm not coding, I spend my time on photography and traveling.`
+    h1: `Welcome to my portfolio`,
+    h2: `I'm Andréa DUHAMEL, a passionate web developer who creates websites and applications.`,
+    navbar: {
+      home: "Home",
+      about: "About",
+      projects: "Projects",
+      skills: "Skills",
+    },
   },
 };
