@@ -7,29 +7,32 @@ import TypewriterText from "./ui/TypewriterText.tsx";
 export default function Header() {
   const { t } = useTranslation();
   return (
-    <div className="sticky top-0 z-10 w-full px-20 py-8 flex items-center justify-between bg-zinc-100 dark:bg-zinc-800 shadow-lg">
+    <header className="sticky top-0 z-10 w-full px-20 py-8 flex items-center justify-between bg-zinc-100/80 dark:bg-zinc-800/80 shadow-lg backdrop-blur-sm">
       <Link to="/" className="text-3xl font-bold">
         <TypewriterText>Andréa DUHAMEL</TypewriterText>
       </Link>
 
       <div className="flex gap-6 items-center">
-        <Link className="uppercase font-bold text-xl" to="/#home">
+        <a className="uppercase font-bold text-xl" href="/#home">
           <TypewriterText>{t.navbar.home}</TypewriterText>
-        </Link>
-        <Link className="uppercase font-bold text-xl" to="/#about">
+        </a>
+        <a className="uppercase font-bold text-xl" href="/#about">
           <TypewriterText>{t.navbar.about}</TypewriterText>
-        </Link>
-        <Link className="uppercase font-bold text-xl" to="/#projects">
-          <TypewriterText>{t.navbar.projects}</TypewriterText>
-        </Link>
-        <Link className="uppercase font-bold text-xl" to="/#skills">
+        </a>
+        {/*<a className="uppercase font-bold text-xl" href="/#skills">
           <TypewriterText>{t.navbar.skills}</TypewriterText>
-        </Link>
+        </a>*/}
+        <a className="uppercase font-bold text-xl" href="/#projects">
+          <TypewriterText>{t.navbar.projects}</TypewriterText>
+        </a>
+        <a className="uppercase font-bold text-xl" href="/#contact">
+          <TypewriterText>{t.navbar.contact}</TypewriterText>
+        </a>
         <AnimatedThemeToggler className="cursor-pointer" />
 
         {/* Toggle langue */}
         <LangToggle />
       </div>
-    </div>
+    </header>
   );
 }

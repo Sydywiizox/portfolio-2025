@@ -7,27 +7,30 @@ export default function Hero() {
   const { t, lang } = useTranslation();
 
   return (
-    <div className="w-full h-[calc(100vh-100px)]  bg-white dark:bg-zinc-900 shadow-lg flex flex-col gap-6 items-center justify-center">
+    <div
+      id="home"
+      className="scroll-mt-25 w-full h-[calc(100vh-100px)]  bg-white dark:bg-zinc-900 shadow-lg flex flex-col gap-6 items-center justify-center"
+    >
       <div className="max-w-[80rem] flex flex-col gap-12 items-center justify-center">
-        <h1 className="text-6xl font-bold text-center">
-          {t.h1.split("portfolio")[0]}
+        <h1 className="font-bold text-center">
+          {t.hero.h1.split("portfolio")[0]}
           <Highlighter key={lang} action="highlight" color="#FD6C9E ">
             <span className="text-black p-2">Portfolio</span>
           </Highlighter>
         </h1>
-        <h2 className="text-3xl text-zinc-800 dark:text-zinc-400 font-bold text-center max-w-260">
-          {t.h2.split("Andréa DUHAMEL")[0]}{" "}
+        <span className="text-zinc-800 text-3xl dark:text-zinc-400 font-bold text-center max-w-260">
+          {t.hero.h2.split("Andréa DUHAMEL")[0]}{" "}
           <Highlighter key={lang} action="highlight" color="#87CEFA">
             <span className="text-black p-2">Andréa DUHAMEL</span>
           </Highlighter>{" "}
-          {t.h2.split("Andréa DUHAMEL")[1]}
-        </h2>
+          {t.hero.h2.split("Andréa DUHAMEL")[1]}
+        </span>
         <Button
           size="lg"
-          className="uppercase shadowlg cursor-pointer text-xl px-10 py-6 flex items-center gap-4"
+          className="uppercase shadow-lg cursor-pointer text-xl px-10 py-6 flex items-center gap-4"
         >
           <a href="#projects" className="">
-            {t.navbar.projects}
+            {t.hero.button}
           </a>{" "}
           <ArrowDown className="animate-bounce size-6" strokeWidth={3} />
         </Button>
