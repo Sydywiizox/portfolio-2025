@@ -84,7 +84,10 @@ export default function ProjectsList() {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full bg-white dark:bg-zinc-900 shadow-lg px-6 py-20">
+    <section
+      id="projects"
+      className="scroll-mt-10 w-full bg-white dark:bg-zinc-900 shadow-lg px-6 py-20"
+    >
       {/* En-tête */}
       <div className="flex flex-col gap-5 text-center mb-16">
         <h2>{t.projects.h3}</h2>

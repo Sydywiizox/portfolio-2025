@@ -1,4 +1,5 @@
 import About from "@/components/About.tsx";
+import Contact from "@/components/Contact.tsx";
 import Hero from "@/components/Hero.tsx";
 import ProjectsList from "@/components/Projects.tsx";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <About />
       <ProjectsList />
+      <Contact />
     </div>
   );
 }

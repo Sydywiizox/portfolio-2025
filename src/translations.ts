@@ -28,11 +28,34 @@ type Projects = {
   p: string;
 };
 
+type Contact = {
+  h3: string;
+  p: string;
+  form: {
+    name: string;
+    namePlaceholder: string;
+    email: string;
+    emailPlaceholder: string;
+    subject: string;
+    subjectPlaceholder: string;
+    message: string;
+    messagePlaceholder: string;
+    submit: string;
+    requiredMessage: string;
+  };
+  toast: {
+    loading: string;
+    success: string;
+    error: string;
+  };
+};
+
 type Translation = {
   navbar: Navbar;
   hero: Hero;
   about: About;
   projects: Projects;
+  contact: Contact;
 };
 
 type Translations = Record<Language, Translation>;
@@ -68,6 +91,27 @@ Si vous avez une opportunité correspondant à mes compétences et mon expérien
       h3: "Mes projets",
       p: "Ici sont affichés mes projets. Vous pouvez cliquer sur un projet pour en savoir plus.",
     },
+    contact: {
+      h3: "Me contacter",
+      p: "N'hésitez pas à me contacter pour toute question ou opportunité professionnelle.",
+      form: {
+        name: "Nom",
+        namePlaceholder: "Votre nom",
+        email: "Email",
+        emailPlaceholder: "votre@email.com",
+        subject: "Sujet",
+        subjectPlaceholder: "Sujet de votre message",
+        message: "Message",
+        messagePlaceholder: "Votre message...",
+        submit: "Envoyer",
+        requiredMessage: "Champs obligatoires",
+      },
+      toast: {
+        loading: "Envoi en cours...",
+        success: "Message envoyé avec succès !",
+        error: "Erreur lors de l'envoi du message.",
+      },
+    },
   },
 
   en: {
@@ -99,6 +143,27 @@ If you have a good opportunity that matches my skills and experience, don't hesi
     projects: {
       h3: "My projects",
       p: "Here are my projects. You can click on one to learn more.",
+    },
+    contact: {
+      h3: "Contact me",
+      p: "Feel free to contact me for any questions or professional opportunities.",
+      form: {
+        name: "Name",
+        namePlaceholder: "Your name",
+        email: "Email",
+        emailPlaceholder: "your@email.com",
+        subject: "Subject",
+        subjectPlaceholder: "Subject of your message",
+        message: "Message",
+        messagePlaceholder: "Your message...",
+        submit: "Send",
+        requiredMessage: "Required fields",
+      },
+      toast: {
+        loading: "Sending...",
+        success: "Message sent successfully!",
+        error: "Error sending message.",
+      },
     },
   },
 };
