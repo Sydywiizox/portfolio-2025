@@ -26,6 +26,9 @@ type About = {
 type Projects = {
   h3: string;
   p: string;
+  technologiesUsed: string;
+  viewSite: string;
+  sourceCode: string;
 };
 
 type Contact = {
@@ -90,6 +93,9 @@ Si vous avez une opportunité correspondant à mes compétences et mon expérien
     projects: {
       h3: "Mes projets",
       p: "Ici sont affichés mes projets. Vous pouvez cliquer sur un projet pour en savoir plus.",
+      technologiesUsed: "Technologies utilisées",
+      viewSite: "Voir le site",
+      sourceCode: "Code source",
     },
     contact: {
       h3: "Me contacter",
@@ -143,6 +149,9 @@ If you have a good opportunity that matches my skills and experience, don't hesi
     projects: {
       h3: "My projects",
       p: "Here are my projects. You can click on one to learn more.",
+      technologiesUsed: "Technologies used",
+      viewSite: "View site",
+      sourceCode: "Source code",
     },
     contact: {
       h3: "Contact me",

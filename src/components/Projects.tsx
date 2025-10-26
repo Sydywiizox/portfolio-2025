@@ -13,6 +13,7 @@ function getProjectSkills(skillIds: string[]): Skill[] {
 
 // Composant Project individuel
 function Project({ project }: { project: Project }) {
+  const { t, lang } = useTranslation();
   const projectSkills = getProjectSkills(project.skillIds);
 
   return (
@@ -23,16 +24,16 @@ function Project({ project }: { project: Project }) {
       </div>
 
       {/* Contenu */}
-      <div className="p-8 w-1/2">
-        <h4 className="text-2xl font-bold mb-4">{project.title}</h4>
+      <div className="p-8 w-1/2 flex flex-col">
+        <h4 className="text-2xl font-bold mb-4">{project.title[lang]}</h4>
         <p className="text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">
-          {project.description}
+          {project.description[lang]}
         </p>
 
         {/* Compétences utilisées */}
-        <div className="mb-6">
+        <div className="mb-6 flex-1">
           <h5 className="text-sm font-semibold uppercase text-zinc-500 dark:text-zinc-400 mb-3">
-            Technologies utilisées
+            {t.projects.technologiesUsed}
           </h5>
           <div className="flex flex-wrap gap-3">
             {projectSkills.map((skill) => (
@@ -59,7 +60,7 @@ function Project({ project }: { project: Project }) {
               className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200"
             >
               <FaExternalLinkAlt />
-              Voir le site
+              {t.projects.viewSite}
             </a>
           )}
           {project.githubLink && (
@@ -70,7 +71,7 @@ function Project({ project }: { project: Project }) {
               className="flex items-center gap-2 px-6 py-3 bg-zinc-800 hover:bg-zinc-900 dark:bg-zinc-700 dark:hover:bg-zinc-600 text-white font-semibold rounded-lg transition-colors duration-200"
             >
               <FaGithub />
-              Code source
+              {t.projects.sourceCode}
             </a>
           )}
         </div>

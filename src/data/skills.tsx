@@ -18,6 +18,7 @@ import {
   SiSupabase,
   SiTailwindcss,
   SiTypescript,
+  SiVercel,
 } from "react-icons/si";
 
 export type Skill = {
@@ -80,13 +81,13 @@ export const skills: Skill[] = [
     colorClass: "text-orange-600",
   },
   {
-    id: "Prisma",
+    id: "prisma",
     name: "Prisma",
     icon: <SiPrisma className="text-4xl" />,
     colorClass: "text-cyan-800 dark:text-cyan-700",
   },
   {
-    id: "Zustand",
+    id: "zustand",
     name: "Zustand",
     icon: <img src="/zustand.png" alt="Zustand" />,
     colorClass: "text-cyan-800 dark:text-cyan-700 w-15",
@@ -146,7 +147,14 @@ export const skills: Skill[] = [
     name: "Firebase",
     icon: <SiFirebase className="text-4xl" />,
     colorClass: "text-orange-500",
-  } /*
+  },
+  {
+    id: "vercel",
+    name: "Vercel",
+    icon: <SiVercel className="text-4xl" />,
+    colorClass: "text-zinc-800 dark:text-zinc-100",
+  },
+  /*
   {
     id: "cpp",
     name: "C++",
@@ -164,5 +172,5 @@ export const skills: Skill[] = [
     name: "Java",
     icon: <FaJava className="text-4xl" />,
     colorClass: "text-red-500",
-  },*/,
+  },*/
 ];
