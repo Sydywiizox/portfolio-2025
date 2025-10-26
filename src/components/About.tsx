@@ -1,5 +1,5 @@
+import SkillsList from "@/components/Skills.tsx";
 import { useTranslation } from "@/hooks/useTranslation.ts";
-import SkillsList from "@/skills.tsx";
 import { Mail } from "lucide-react";
 import { Button } from "./ui/button.tsx";
 
@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="scroll-mt-10 flex mx-auto max-w-6xl flex-col gap-20 pt-30"
+      className="scroll-mt-10 flex mx-auto max-w-6xl flex-col gap-20 pt-30 pb-20"
     >
       <div className="flex flex-col gap-5 text-center">
         <h2>{t.about.h3}</h2>

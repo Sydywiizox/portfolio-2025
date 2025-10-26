@@ -19,7 +19,8 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
-type Skill = {
+
+export type Skill = {
   id: string;
   name: string;
   icon: JSX.Element;
@@ -27,7 +28,7 @@ type Skill = {
 };
 
 // Liste des compétences
-const skills: Skill[] = [
+export const skills: Skill[] = [
   {
     id: "html",
     name: "HTML",
@@ -83,6 +84,12 @@ const skills: Skill[] = [
     name: "Prisma",
     icon: <SiPrisma className="text-4xl" />,
     colorClass: "text-cyan-800 dark:text-cyan-700",
+  },
+  {
+    id: "Zustand",
+    name: "Zustand",
+    icon: <img src="/zustand.png" alt="Zustand" />,
+    colorClass: "text-cyan-800 dark:text-cyan-700 w-15",
   },
   {
     id: "responsive",
@@ -159,19 +166,3 @@ const skills: Skill[] = [
     colorClass: "text-red-500",
   },*/,
 ];
-
-export default function SkillsList() {
-  return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-      {skills.map((skill) => (
-        <div
-          key={skill.id}
-          className="flex flex-col items-center justify-center gap-2 p-4 bg-zinc-100 dark:bg-zinc-800 rounded-2xl shadow-md hover:shadow-lg transition-all duration-200"
-        >
-          <div className={skill.colorClass}>{skill.icon}</div>
-          <span className="font-semibold text-lg">{skill.name}</span>
-        </div>
-      ))}
-    </div>
-  );
-}
