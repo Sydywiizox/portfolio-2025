@@ -53,7 +53,7 @@ export default function AnimatedTextarea({
           className="absolute top-3 left-3 z-10"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.2, delay: 0.15 }}
         >
           {icon}
         </motion.span>

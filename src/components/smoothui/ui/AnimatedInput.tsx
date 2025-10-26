@@ -45,7 +45,7 @@ export default function AnimatedInput({
           className="absolute top-1/2 left-3 -translate-y-1/2 z-10"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.2, delay: 0.15 }}
         >
           {icon}
         </motion.span>
