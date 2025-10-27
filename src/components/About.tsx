@@ -34,6 +34,44 @@ export default function About() {
           <SkillsList />
         </div>
       </div>
+      <div className="flex gap-20 justify-center">
+        <div className="flex flex-col gap-8 w-1/2">
+          <h3>{t.about.education.title}</h3>
+          <div className="flex flex-col gap-6">
+            {t.about.education.items.map((item, index) => (
+              <div key={index} className="border-l-4 border-blue-500 pl-4">
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                  {item.year}
+                </p>
+                <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
+                  {item.degree}
+                </h4>
+                <p className="text-zinc-600 dark:text-zinc-400">
+                  {item.school}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="flex flex-col gap-8 w-1/2">
+          <h3>{t.about.experience.title}</h3>
+          <div className="flex flex-col gap-6">
+            {t.about.experience.items.map((item, index) => (
+              <div key={index} className="border-l-4 border-blue-500 pl-4">
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                  {item.year}
+                </p>
+                <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
+                  {item.position}
+                </h4>
+                <p className="text-zinc-600 dark:text-zinc-400">
+                  {item.company}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

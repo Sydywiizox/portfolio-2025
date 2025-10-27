@@ -21,6 +21,22 @@ type About = {
   p2: string;
   button: string;
   skills: string;
+  education: {
+    title: string;
+    items: {
+      year: string;
+      degree: string;
+      school: string;
+    }[];
+  };
+  experience: {
+    title: string;
+    items: {
+      year: string;
+      position: string;
+      company: string;
+    }[];
+  };
 };
 
 type Projects = {
@@ -83,12 +99,47 @@ export const translations: Translations = {
       h4: "Apprenez à me connaître !",
       p2: `Je suis un développeur web spécialisé dans le Frontend, construisant et gérant la partie visible des sites et applications web pour garantir la réussite du produit final.  
 Découvrez certains de mes travaux dans la section Projets.  
-J’aime aussi partager du contenu lié au développement web afin d’aider d’autres personnes de la communauté.  
-N’hésitez pas à me suivre sur LinkedIn et Instagram, où je publie du contenu utile sur le développement et la programmation.  
+J'aime aussi partager du contenu lié au développement web afin d'aider d'autres personnes de la communauté.  
+N'hésitez pas à me suivre sur LinkedIn et Instagram, où je publie du contenu utile sur le développement et la programmation.  
 Je suis ouvert à de nouvelles opportunités professionnelles où je peux contribuer, apprendre et évoluer.  
-Si vous avez une opportunité correspondant à mes compétences et mon expérience, n’hésitez pas à me contacter.`,
+Si vous avez une opportunité correspondant à mes compétences et mon expérience, n'hésitez pas à me contacter.`,
       button: "Me contacter",
       skills: "Mes compétences",
+      education: {
+        title: "Mes formations",
+        items: [
+          {
+            year: "2025 (2 mois)",
+            degree: "React en Entreprise",
+            school: "ViDev",
+          },
+          {
+            year: "2025 (2 semaines)",
+            degree: "Tailwind CSS v4",
+            school: "Ecole du Web",
+          },
+          {
+            year: "2024 - 2025",
+            degree: "Développeur Web",
+            school: "OpenClassrooms",
+          },
+          {
+            year: "2019 - 2021",
+            degree: "DUT Informatique",
+            school: "IUT d'Arles (Académie Aix-Marseille)",
+          },
+        ],
+      },
+      experience: {
+        title: "Mes expériences",
+        items: [
+          {
+            year: "2021 (3 mois)",
+            position: "Développeur web (Stage fin de DUT)",
+            company: "Agence Easy - ELS Conseil",
+          },
+        ],
+      },
     },
     projects: {
       h3: "Mes projets",
@@ -145,6 +196,41 @@ I'm open to job opportunities where I can contribute, learn, and grow.
 If you have a good opportunity that matches my skills and experience, don't hesitate to contact me.`,
       button: "Contact me",
       skills: "My skills",
+      education: {
+        title: "My education",
+        items: [
+          {
+            year: "2025 (2 months)",
+            degree: "React in Company",
+            school: "ViDev",
+          },
+          {
+            year: "2025 (2 weeks)",
+            degree: "Tailwind CSS v4",
+            school: "Ecole du Web",
+          },
+          {
+            year: "2024 - 2025",
+            degree: "Web Developer",
+            school: "OpenClassrooms",
+          },
+          {
+            year: "2019 - 2021",
+            degree: "DUT Computer Science",
+            school: "IUT of Arles (Aix-Marseille Academy)",
+          },
+        ],
+      },
+      experience: {
+        title: "My experiences",
+        items: [
+          {
+            year: "2021 (3 months)",
+            position: "Web Developer (DUT Internship)",
+            company: "Agence Easy - ELS Conseil",
+          },
+        ],
+      },
     },
     projects: {
       h3: "My projects",
