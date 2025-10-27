@@ -20,7 +20,7 @@ function Project({ project }: { project: Project }) {
     <div className="bg-zinc-100 dark:bg-zinc-800 flex gap-5 rounded-3xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl">
       {/* Image avec Safari */}
       <div className="w-full max-w-1/2 mx-auto p-6 flex items-center justify-center">
-        <Safari imageSrc={project.imageSrc} url={project.demoLink} />
+        <Safari imageSrc={project.imageSrc} url={project.url} />
       </div>
 
       {/* Contenu */}
