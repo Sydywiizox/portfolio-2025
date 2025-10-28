@@ -13,7 +13,7 @@ export default function Hero() {
     >
       <div className="max-w-[80rem] flex flex-col gap-12 items-center justify-center">
         <img
-          src="/public/me.png"
+          src="/me.png"
           alt=""
           className="size-60 rounded-full object-cover"
         />

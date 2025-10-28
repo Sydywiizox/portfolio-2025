@@ -11,7 +11,7 @@ export default function Header() {
       <div className="flex items-center gap-4">
         <a href="/#home" className="text-3xl font-bold flex gap-3 items-center">
           <img
-            src="/public/me.png"
+            src="/me.png"
             alt="andrea duhamel"
             className="size-15 rounded-full object-cover"
           />
