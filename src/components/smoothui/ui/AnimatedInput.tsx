@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { useRef, useState } from "react";
+import { useRef, useState, type HTMLInputTypeAttribute } from "react";
 
 const LABEL_TRANSITION = {
   duration: 0.28,
@@ -14,9 +14,11 @@ export interface AnimatedInputProps {
   placeholder?: string;
   disabled?: boolean;
   className?: string;
+  required?: boolean;
   inputClassName?: string;
   labelClassName?: string;
   icon?: React.ReactNode;
+  type?: HTMLInputTypeAttribute;
 }
 
 export default function AnimatedInput({
@@ -26,10 +28,12 @@ export default function AnimatedInput({
   label,
   placeholder = "",
   disabled = false,
+  required = false,
   className = "",
   inputClassName = "",
   labelClassName = "",
   icon,
+  type = "text",
 }: AnimatedInputProps) {
   const [internalValue, setInternalValue] = useState(defaultValue);
   const isControlled = value !== undefined;
@@ -52,7 +56,7 @@ export default function AnimatedInput({
       )}
       <input
         ref={inputRef}
-        type="text"
+        type={type}
         value={val}
         onChange={(e) => {
           if (!isControlled) setInternalValue(e.target.value);
@@ -60,6 +64,7 @@ export default function AnimatedInput({
         }}
         placeholder={isFloating ? placeholder : ""}
         disabled={disabled}
+        required={required}
         className={`peer focus:ring-primary bg-background w-full rounded-sm border px-3 py-2 text-sm transition outline-none focus:ring-1 ${
           icon && isFloating ? "pl-10" : ""
         } ${inputClassName}`}

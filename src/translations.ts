@@ -91,7 +91,7 @@ export const translations: Translations = {
     hero: {
       h1: "Bienvenue sur mon portfolio",
       h2: "Je suis Andréa DUHAMEL, développeur web passionné par la création de sites et d'applications web.",
-      button: "Mes Projets",
+      button: "À propos",
     },
     about: {
       h3: "À propos de moi",
@@ -182,7 +182,7 @@ Si vous avez une opportunité correspondant à mes compétences et mon expérien
     hero: {
       h1: "Welcome to my portfolio",
       h2: "I'm Andréa DUHAMEL, a passionate web developer who creates websites and applications.",
-      button: "My Projects",
+      button: "About",
     },
     about: {
       h3: "About me",

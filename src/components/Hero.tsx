@@ -29,7 +29,7 @@ export default function Hero() {
           size="lg"
           className="uppercase shadow-lg cursor-pointer text-xl px-10 py-6 flex items-center gap-4"
         >
-          <a href="#projects" className="">
+          <a href="#about" className="">
             {t.hero.button}
           </a>{" "}
           <ArrowDown className="animate-bounce size-6" strokeWidth={3} />

@@ -93,10 +93,12 @@ export default function Contact() {
             {/* Email */}
             <input type="hidden" name="email" value={formData.email} />
             <AnimatedInput
+              type="email"
               value={formData.email}
               onChange={(val) => setFormData({ ...formData, email: val })}
               label={`${t.contact.form.email} *`}
               placeholder={t.contact.form.emailPlaceholder}
+              required={true}
               icon={<AtSign className="size-4 text-blue-600" />}
               inputClassName="bg-zinc-100 dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-500 rounded-lg py-3"
             />
@@ -121,6 +123,7 @@ export default function Contact() {
               placeholder={t.contact.form.messagePlaceholder}
               icon={<Mail className="size-4 text-blue-600" />}
               rows={6}
+              required={true}
               textareaClassName="bg-zinc-100 dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-500 rounded-lg py-3"
             />
 
