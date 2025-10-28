@@ -1,5 +1,4 @@
 import type { JSX } from "react";
-import { DiResponsive } from "react-icons/di";
 import {
   FaCss3Alt,
   FaDatabase,
@@ -10,6 +9,7 @@ import {
   FaNodeJs,
   FaReact,
 } from "react-icons/fa";
+import { MdDevices } from "react-icons/md";
 import { RiNextjsFill } from "react-icons/ri";
 import {
   SiFirebase,
@@ -95,7 +95,7 @@ export const skills: Skill[] = [
   {
     id: "responsive",
     name: "Responsive",
-    icon: <DiResponsive className="text-8xl -m-8" />,
+    icon: <MdDevices className="text-4xl" />,
     colorClass: "text-zinc-800 dark:text-zinc-100",
   },
   {

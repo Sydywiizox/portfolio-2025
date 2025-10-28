@@ -1,5 +1,6 @@
 import About from "@/components/About.tsx";
 import Contact from "@/components/Contact.tsx";
+import Footer from "@/components/Footer.tsx";
 import Hero from "@/components/Hero.tsx";
 import ProjectsList from "@/components/Projects.tsx";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <About />
       <ProjectsList />
       <Contact />
+      <Footer />
     </div>
   );
 }

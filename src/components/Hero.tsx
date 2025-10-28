@@ -12,6 +12,11 @@ export default function Hero() {
       className="scroll-mt-25 w-full h-[calc(100vh-100px)]  bg-white dark:bg-zinc-900 shadow-lg flex flex-col gap-6 items-center justify-center"
     >
       <div className="max-w-[80rem] flex flex-col gap-12 items-center justify-center">
+        <img
+          src="/public/me.png"
+          alt=""
+          className="size-60 rounded-full object-cover"
+        />
         <h1 className="font-bold text-center">
           {t.hero.h1.split("portfolio")[0]}
           <Highlighter key={lang} action="highlight" color="#FD6C9E ">

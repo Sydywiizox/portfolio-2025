@@ -87,7 +87,7 @@ export default function ProjectsList() {
   return (
     <section
       id="projects"
-      className="scroll-mt-10 w-full bg-white dark:bg-zinc-900 shadow-lg px-6 py-20"
+      className="scroll-mt-25 w-full bg-white dark:bg-zinc-900 shadow-lg px-6 py-20"
     >
       {/* En-tête */}
       <div className="flex flex-col gap-5 text-center mb-16">

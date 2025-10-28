@@ -69,12 +69,17 @@ type Contact = {
   };
 };
 
+type Footer = {
+  rights: string;
+};
+
 type Translation = {
   navbar: Navbar;
   hero: Hero;
   about: About;
   projects: Projects;
   contact: Contact;
+  footer: Footer;
 };
 
 type Translations = Record<Language, Translation>;
@@ -91,7 +96,7 @@ export const translations: Translations = {
     hero: {
       h1: "Bienvenue sur mon portfolio",
       h2: "Je suis Andréa DUHAMEL, développeur web passionné par la création de sites et d'applications web.",
-      button: "À propos",
+      button: "En savoir plus",
     },
     about: {
       h3: "À propos de moi",
@@ -169,6 +174,9 @@ Si vous avez une opportunité correspondant à mes compétences et mon expérien
         error: "Erreur lors de l'envoi du message.",
       },
     },
+    footer: {
+      rights: "Tous droits réservés.",
+    },
   },
 
   en: {
@@ -182,7 +190,7 @@ Si vous avez une opportunité correspondant à mes compétences et mon expérien
     hero: {
       h1: "Welcome to my portfolio",
       h2: "I'm Andréa DUHAMEL, a passionate web developer who creates websites and applications.",
-      button: "About",
+      button: "Learn more",
     },
     about: {
       h3: "About me",
@@ -259,6 +267,9 @@ If you have a good opportunity that matches my skills and experience, don't hesi
         success: "Message sent successfully!",
         error: "Error sending message.",
       },
+    },
+    footer: {
+      rights: "All rights reserved.",
     },
   },
 };
