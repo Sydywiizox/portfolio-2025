@@ -25,11 +25,11 @@ export const projects: Project[] = [
       en: "FFLeague",
     },
     description: {
-      fr: "Une plateforme e-commerce complète avec gestion des produits, panier d'achat et système de paiement. Utilise Next.js pour l'optimisation SEO et les performances.",
-      en: "A complete e-commerce platform with product management, shopping cart, and payment system. Uses Next.js for SEO optimization and performance.",
+      fr: "Plateforme web pour une ligue e-sport (League of Legends) gérant joueurs, équipes, tournois et planning. Construction côté serveur avec Next.js (App Router) pour les performances, TypeScript pour la typage, Tailwind CSS pour le responsive et l’interface, Prisma (PostgreSQL) pour la gestion des données utilisateurs/équipes/matchs/tournois. Déploiement sur Vercel. Utilisation de NextAuth pour l’authentification Discord et de Shadcn UI pour les composants.",
+      en: "Web platform for an esports league (League of Legends) managing players, teams, tournaments, and schedules. Built with Next.js (App Router) for performance, TypeScript for strong typing, Tailwind CSS for responsive UI, and Prisma (PostgreSQL) for data management across users/teams/matches/tournaments. Deployed on Vercel. Uses NextAuth for Discord authentication and Shadcn UI for accessible components.",
     },
     imageSrc: "/ffl.png",
-    skillIds: ["nextjs", "ts", "tailwind", "prisma", "vercel"],
+    skillIds: ["nextjs", "ts", "tailwind", "prisma", "vercel", "shadcn"],
     demoLink: "https://ffleague.fr",
   },
   {
@@ -69,6 +69,7 @@ export const projects: Project[] = [
     },
     imageSrc: "/mvg.png",
     skillIds: ["mongodb", "node"],
+    demoLink: "https://mon-vieux-grimoire-front-two.vercel.app/",
     githubLink: "https://github.com/Sydywiizox/mon-vieux-grimoire",
   },
 ];

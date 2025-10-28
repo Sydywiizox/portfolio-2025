@@ -15,6 +15,7 @@ import {
   SiFirebase,
   SiMongodb,
   SiPrisma,
+  SiShadcnui,
   SiSupabase,
   SiTailwindcss,
   SiTypescript,
@@ -96,6 +97,12 @@ export const skills: Skill[] = [
     id: "responsive",
     name: "Responsive",
     icon: <MdDevices className="text-4xl" />,
+    colorClass: "text-zinc-800 dark:text-zinc-100",
+  },
+  {
+    id: "shadcn",
+    name: "Shadcn UI",
+    icon: <SiShadcnui className="text-4xl" />,
     colorClass: "text-zinc-800 dark:text-zinc-100",
   },
   {
