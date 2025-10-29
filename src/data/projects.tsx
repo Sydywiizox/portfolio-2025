@@ -71,6 +71,6 @@ export const projects: Project[] = [
     skillIds: ["mongodb", "node"],
     demoLink: "https://mon-vieux-grimoire-oc.vercel.app/",
     githubLink:
-      "https://github.com/Sydywiizox/mon-vieux-grimoire-front/tree/v2",
+      "https://github.com/Sydywiizox/mon-vieux-grimoire/tree/cloudinary",
   },
 ];
