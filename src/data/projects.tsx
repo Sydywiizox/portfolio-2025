@@ -69,7 +69,8 @@ export const projects: Project[] = [
     },
     imageSrc: "/mvg.png",
     skillIds: ["mongodb", "node"],
-    demoLink: "https://mon-vieux-grimoire-front-two.vercel.app/",
-    githubLink: "https://github.com/Sydywiizox/mon-vieux-grimoire",
+    demoLink: "https://mon-vieux-grimoire-oc.vercel.app/",
+    githubLink:
+      "https://github.com/Sydywiizox/mon-vieux-grimoire-front/tree/v2",
   },
 ];
