@@ -22,7 +22,7 @@ export default function Hero() {
           shadowIntensity={0}
           lightingIntensity={0.1}
           initialPosition={{ x: 200, y: -120 }}
-          className="z-5!"
+          className="z-15!"
         />
         <img
           src="/me.png"
