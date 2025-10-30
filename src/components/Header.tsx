@@ -7,7 +7,7 @@ import TypewriterText from "./ui/TypewriterText.tsx";
 export default function Header() {
   const { t } = useTranslation();
   return (
-    <header className="sticky top-0 z-20 w-full px-20 py-8 flex items-center justify-between bg-zinc-100/80 dark:bg-zinc-800/80 shadow-lg backdrop-blur-sm">
+    <header className="sticky top-0 z-20 w-full px-20 py-5 flex items-center justify-between bg-zinc-100/80 dark:bg-zinc-800/80 shadow-lg backdrop-blur-sm">
       <div className="flex items-center gap-4">
         <a href="/#home" className="text-3xl font-bold flex gap-3 items-center">
           <img

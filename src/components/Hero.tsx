@@ -1,7 +1,8 @@
 import { useTranslation } from "@/hooks/useTranslation.ts";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, X } from "lucide-react";
 import { Button } from "./ui/button.tsx";
 import { Highlighter } from "./ui/highlighter.tsx";
+import StickerPeel from "./StickerPeel.tsx";
 
 export default function Hero() {
   const { t, lang } = useTranslation();
@@ -12,10 +13,21 @@ export default function Hero() {
       className="scroll-mt-25 w-full h-[calc(100vh-100px)]  bg-white dark:bg-zinc-900 shadow-lg flex flex-col gap-6 items-center justify-center"
     >
       <div className="max-w-[80rem] flex flex-col gap-12 items-center justify-center">
+        <StickerPeel
+          imageSrc={"/react.png"}
+          width={150}
+          rotate={0}
+          peelBackHoverPct={20}
+          peelBackActivePct={40}
+          shadowIntensity={0}
+          lightingIntensity={0.1}
+          initialPosition={{ x: 200, y: -120 }}
+          className="z-5!"
+        />
         <img
           src="/me.png"
           alt=""
-          className="size-60 rounded-full object-cover"
+          className="size-50 rounded-full object-cover"
         />
         <h1 className="font-bold text-center">
           {t.hero.h1.split("portfolio")[0]}
