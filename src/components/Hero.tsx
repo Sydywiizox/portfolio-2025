@@ -6,7 +6,6 @@ import StickerPeel from "./StickerPeel.tsx";
 
 export default function Hero() {
   const { t, lang } = useTranslation();
-
   return (
     <div
       id="home"
