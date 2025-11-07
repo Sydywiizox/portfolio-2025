@@ -1,8 +1,8 @@
 import { useTranslation } from "@/hooks/useTranslation.ts";
-import { ArrowDown, X } from "lucide-react";
+import { ArrowDown } from "lucide-react";
+import StickerPeel from "./StickerPeel.tsx";
 import { Button } from "./ui/button.tsx";
 import { Highlighter } from "./ui/highlighter.tsx";
-import StickerPeel from "./StickerPeel.tsx";
 
 export default function Hero() {
   const { t, lang } = useTranslation();

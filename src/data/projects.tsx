@@ -69,7 +69,6 @@ export const projects: Project[] = [
     },
     imageSrc: "/mvg.png",
     skillIds: ["mongodb", "node"],
-    demoLink: "https://mon-vieux-grimoire-oc.vercel.app/",
     githubLink:
       "https://github.com/Sydywiizox/mon-vieux-grimoire/tree/cloudinary",
   },
