@@ -1,4 +1,4 @@
-import { useRef, useEffect, useMemo, CSSProperties } from "react";
+import { useRef, useEffect, useMemo, type CSSProperties } from "react";
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
 
@@ -17,6 +17,7 @@ interface StickerPeelProps {
   initialPosition?: "center" | "random" | { x: number; y: number };
   peelDirection?: number;
   className?: string;
+  onPositionChange?: (pos: { x: number; y: number }) => void;
 }
 
 interface CSSVars extends CSSProperties {
@@ -46,6 +47,7 @@ const StickerPeel: React.FC<StickerPeelProps> = ({
   lightingIntensity = 0.1,
   initialPosition = "center",
   peelDirection = 0,
+  onPositionChange,
   className = "",
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -92,6 +94,17 @@ const StickerPeel: React.FC<StickerPeelProps> = ({
       onDrag(this: Draggable) {
         const rot = gsap.utils.clamp(-24, 24, this.deltaX * 0.4);
         gsap.to(target, { rotation: rot, duration: 0.15, ease: "power1.out" });
+
+        // 🔹 Informe le parent en temps réel
+        if (typeof onPositionChange === "function") {
+          onPositionChange({ x: this.x, y: this.y });
+        }
+      },
+      onRelease(this: Draggable) {
+        // 🔹 Informe aussi à la fin du drag
+        if (typeof onPositionChange === "function") {
+          onPositionChange({ x: this.x, y: this.y });
+        }
       },
       onDragEnd() {
         const rotationEase = "power2.out";

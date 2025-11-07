@@ -129,13 +129,13 @@ export const skills: Skill[] = [
     icon: <span className="text-4xl font-extrabold">SEO</span>,
     colorClass: "text-emerald-500",
   },
-
+  /*
   {
     id: "back4app",
     name: "Back4App",
     icon: <span className="text-4xl font-extrabold">B4A</span>,
     colorClass: "text-slate-800 dark:text-slate-400",
-  },
+  },*/
   {
     id: "mongodb",
     name: "MongoDB",
