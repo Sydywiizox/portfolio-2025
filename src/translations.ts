@@ -21,6 +21,8 @@ type About = {
   p2: string;
   button: string;
   skills: string;
+  showMore: string;
+  showLess: string;
   education: {
     title: string;
     items: {
@@ -81,6 +83,12 @@ type Footer = {
   rights: string;
 };
 
+type NotFound = {
+  title: string;
+  message: string;
+  button: string;
+};
+
 type Translation = {
   navbar: Navbar;
   hero: Hero;
@@ -89,6 +97,7 @@ type Translation = {
   projectDetail: ProjectDetail;
   contact: Contact;
   footer: Footer;
+  notFound: NotFound;
 };
 
 type Translations = Record<Language, Translation>;
@@ -119,6 +128,8 @@ Je suis ouvert à de nouvelles opportunités professionnelles où je peux contri
 Si vous avez une opportunité correspondant à mes compétences et mon expérience, n'hésitez pas à me contacter.`,
       button: "Me contacter",
       skills: "Mes compétences",
+      showMore: "Voir plus",
+      showLess: "Voir moins",
       education: {
         title: "Mes formations",
         items: [
@@ -193,6 +204,11 @@ Si vous avez une opportunité correspondant à mes compétences et mon expérien
     footer: {
       rights: "Tous droits réservés.",
     },
+    notFound: {
+      title: "Page introuvable",
+      message: "Oups ! La page que vous recherchez n'existe pas ou a été déplacée.",
+      button: "Retour à l'accueil",
+    },
   },
 
   en: {
@@ -220,6 +236,8 @@ I'm open to job opportunities where I can contribute, learn, and grow.
 If you have a good opportunity that matches my skills and experience, don't hesitate to contact me.`,
       button: "Contact me",
       skills: "My skills",
+      showMore: "Show more",
+      showLess: "Show less",
       education: {
         title: "My education",
         items: [
@@ -293,6 +311,11 @@ If you have a good opportunity that matches my skills and experience, don't hesi
     },
     footer: {
       rights: "All rights reserved.",
+    },
+    notFound: {
+      title: "Page not found",
+      message: "Oops! The page you're looking for doesn't exist or has been moved.",
+      button: "Back to home",
     },
   },
 };
