@@ -45,6 +45,14 @@ type Projects = {
   technologiesUsed: string;
   viewSite: string;
   sourceCode: string;
+  viewMore: string;
+};
+
+type ProjectDetail = {
+  backToProjects: string;
+  backToHome: string;
+  description: string;
+  notFound: string;
 };
 
 type Contact = {
@@ -78,6 +86,7 @@ type Translation = {
   hero: Hero;
   about: About;
   projects: Projects;
+  projectDetail: ProjectDetail;
   contact: Contact;
   footer: Footer;
 };
@@ -152,6 +161,13 @@ Si vous avez une opportunité correspondant à mes compétences et mon expérien
       technologiesUsed: "Technologies utilisées",
       viewSite: "Voir le site",
       sourceCode: "Code source",
+      viewMore: "En savoir plus",
+    },
+    projectDetail: {
+      backToProjects: "Retour aux projets",
+      backToHome: "Retour à l'accueil",
+      description: "Description du projet",
+      notFound: "Projet introuvable",
     },
     contact: {
       h3: "Me contacter",
@@ -246,6 +262,13 @@ If you have a good opportunity that matches my skills and experience, don't hesi
       technologiesUsed: "Technologies used",
       viewSite: "View site",
       sourceCode: "Source code",
+      viewMore: "Learn more",
+    },
+    projectDetail: {
+      backToProjects: "Back to projects",
+      backToHome: "Back to home",
+      description: "Project description",
+      notFound: "Project not found",
     },
     contact: {
       h3: "Contact me",

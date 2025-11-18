@@ -3,6 +3,7 @@ import { projects, type Project } from "@/data/projects.tsx";
 import { skills, type Skill } from "@/data/skills.tsx";
 import { useTranslation } from "@/hooks/useTranslation";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // Fonction pour récupérer les compétences d'un projet
 function getProjectSkills(skillIds: string[]): Skill[] {
@@ -26,7 +27,7 @@ function Project({ project }: { project: Project }) {
       {/* Contenu */}
       <div className="p-8 w-1/2 flex flex-col">
         <h4 className="text-2xl font-bold mb-4">{project.title[lang]}</h4>
-        <p className="text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">
+        <p className="text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed line-clamp-3">
           {project.description[lang]}
         </p>
 
@@ -52,6 +53,12 @@ function Project({ project }: { project: Project }) {
 
         {/* Liens */}
         <div className="flex gap-4">
+          <Link
+            to={`/project/${project.id}`}
+            className="flex items-center gap-2 px-6 py-3 bg-zinc-200 hover:bg-zinc-300 text-black font-semibold rounded-lg transition-colors duration-200"
+          >
+            {t.projects.viewMore}
+          </Link>
           {project.demoLink && (
             <a
               href={project.demoLink}

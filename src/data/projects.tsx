@@ -18,7 +18,7 @@ export type Project = {
 // Liste des projets
 export const projects: Project[] = [
   {
-    id: "project-1",
+    id: "ffleague",
     url: "https://ffleague.fr",
     title: {
       fr: "FFLeague",
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     demoLink: "https://ffleague.fr",
   },
   {
-    id: "project-2",
+    id: "crazee-burger",
     url: "https://crazeeburger.fr",
     title: {
       fr: "Crazee Burger",
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/Sydywiizox/crazee-burger",
   },
   {
-    id: "project-3",
+    id: "mvg",
     url: "https://mon-vieux-grimoire.fr",
     title: {
       fr: "Mon vieux grimoire",
