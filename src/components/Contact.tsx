@@ -44,20 +44,20 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="scroll-mt-15 w-full bg-zinc-100 dark:bg-zinc-800 px-6 py-20"
+      className="scroll-mt-15 w-full bg-zinc-100 dark:bg-zinc-800 px-4 md:px-6 py-12 md:py-20"
     >
       <div className="max-w-6xl mx-auto">
         {/* En-tête */}
-        <div className="flex flex-col gap-5 text-center mb-16">
-          <h2>{t.contact.h3}</h2>
+        <div className="flex flex-col gap-3 md:gap-5 text-center mb-8 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl">{t.contact.h3}</h2>
           <hr className="w-8 mx-auto h-1 rounded-2xl border-0 bg-zinc-800 dark:bg-zinc-400" />
-          <p className="text-2xl text-zinc-600 dark:text-zinc-400">
+          <p className="text-lg md:text-xl lg:text-2xl text-zinc-600 dark:text-zinc-400 px-4">
             {t.contact.p}
           </p>
         </div>
 
         {/* Formulaire */}
-        <div className="max-w-2xl mx-auto bg-white dark:bg-zinc-900 rounded-3xl shadow-lg p-8">
+        <div className="max-w-2xl mx-auto bg-white dark:bg-zinc-900 rounded-2xl md:rounded-3xl shadow-lg p-4 md:p-6 lg:p-8">
           <style>{`
             :root {
               --color-brand: #2563eb;
@@ -78,7 +78,7 @@ export default function Contact() {
               --tw-ring-color: #2563eb;
             }
           `}</style>
-          <form ref={form} onSubmit={sendEmail} className="space-y-8">
+          <form ref={form} onSubmit={sendEmail} className="space-y-4 md:space-y-8">
             {/* Nom */}
             <input type="hidden" name="name" value={formData.name} />
             <AnimatedInput
@@ -86,8 +86,8 @@ export default function Contact() {
               onChange={(val) => setFormData({ ...formData, name: val })}
               label={t.contact.form.name}
               placeholder={t.contact.form.namePlaceholder}
-              icon={<User className="size-4 text-blue-600" />}
-              inputClassName="bg-zinc-100 dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-500 rounded-lg py-3"
+              icon={<User className="size-3 md:size-4 text-blue-600" />}
+              inputClassName="bg-zinc-100 dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-500 rounded-lg py-2 md:py-3 text-sm md:text-base"
             />
 
             {/* Email */}
@@ -99,8 +99,8 @@ export default function Contact() {
               label={`${t.contact.form.email} *`}
               placeholder={t.contact.form.emailPlaceholder}
               required={true}
-              icon={<AtSign className="size-4 text-blue-600" />}
-              inputClassName="bg-zinc-100 dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-500 rounded-lg py-3"
+              icon={<AtSign className="size-3 md:size-4 text-blue-600" />}
+              inputClassName="bg-zinc-100 dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-500 rounded-lg py-2 md:py-3 text-sm md:text-base"
             />
 
             {/* Sujet */}
@@ -110,8 +110,8 @@ export default function Contact() {
               onChange={(val) => setFormData({ ...formData, subject: val })}
               label={t.contact.form.subject}
               placeholder={t.contact.form.subjectPlaceholder}
-              icon={<MessageSquare className="size-4 text-blue-600" />}
-              inputClassName="bg-zinc-100 dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-500 rounded-lg py-3"
+              icon={<MessageSquare className="size-3 md:size-4 text-blue-600" />}
+              inputClassName="bg-zinc-100 dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-500 rounded-lg py-2 md:py-3 text-sm md:text-base"
             />
 
             {/* Message */}
@@ -121,22 +121,22 @@ export default function Contact() {
               onChange={(val) => setFormData({ ...formData, message: val })}
               label={`${t.contact.form.message} *`}
               placeholder={t.contact.form.messagePlaceholder}
-              icon={<Mail className="size-4 text-blue-600" />}
+              icon={<Mail className="size-3 md:size-4 text-blue-600" />}
               rows={6}
               required={true}
-              textareaClassName="bg-zinc-100 dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-500 rounded-lg py-3"
+              textareaClassName="bg-zinc-100 dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-500 rounded-lg py-2 md:py-3 text-sm md:text-base"
             />
 
-            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+            <p className="text-xs md:text-sm text-zinc-600 dark:text-zinc-400">
               * {t.contact.form.requiredMessage}
             </p>
 
             {/* Bouton d'envoi */}
             <button
               type="submit"
-              className="cursor-pointer w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-lg hover:shadow-xl flex items-center justify-center gap-3 text-lg uppercase"
+              className="cursor-pointer w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-bold py-3 md:py-4 px-4 md:px-6 rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 md:gap-3 text-sm md:text-base lg:text-lg uppercase"
             >
-              <Send className="size-5" />
+              <Send className="size-4 md:size-5" />
               {t.contact.form.submit}
             </button>
           </form>

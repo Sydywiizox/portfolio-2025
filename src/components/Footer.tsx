@@ -5,11 +5,11 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="w-full bg-white dark:bg-zinc-900 shadow-lg py-12">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-col items-center gap-6">
+    <footer className="w-full bg-white dark:bg-zinc-900 shadow-lg py-8 md:py-12">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="flex flex-col items-center gap-4 md:gap-6">
           {/* Liens sociaux */}
-          <div className="flex gap-6 items-center">
+          <div className="flex gap-4 md:gap-6 items-center">
             <a
               href="https://github.com/Sydywiizox"
               className="text-zinc-800 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
@@ -17,7 +17,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="GitHub"
             >
-              <FaGithub className="text-3xl" />
+              <FaGithub className="text-2xl md:text-3xl" />
             </a>
             <a
               href="https://www.linkedin.com/in/andr%C3%A9a-duhamel-9538ab35b/"
@@ -26,19 +26,19 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <FaLinkedin className="text-3xl" />
+              <FaLinkedin className="text-2xl md:text-3xl" />
             </a>
             <a
               href="mailto:andrea_duhamel@outlook.fr"
               className="text-zinc-800 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
               aria-label="Email"
             >
-              <FaEnvelope className="text-3xl" />
+              <FaEnvelope className="text-2xl md:text-3xl" />
             </a>
           </div>
 
           {/* Copyright */}
-          <p className="text-sm text-zinc-600 dark:text-zinc-400">
+          <p className="text-xs md:text-sm text-zinc-600 dark:text-zinc-400 text-center">
             © {new Date().getFullYear()} Andréa DUHAMEL. {t.footer.rights}
           </p>
         </div>

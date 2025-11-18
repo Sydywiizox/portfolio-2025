@@ -101,7 +101,7 @@ export const skills: Skill[] = [
   },
   {
     id: "shadcn",
-    name: "Shadcn UI",
+    name: "Shadcn",
     icon: <SiShadcnui className="text-4xl" />,
     colorClass: "text-zinc-800 dark:text-zinc-100",
   },
