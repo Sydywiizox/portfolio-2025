@@ -120,12 +120,7 @@ export const translations: Translations = {
       h3: "À propos de moi",
       p: "Ici vous trouverez un peu de moi, un developpeur web passionné par la création de sites et d'applications web.",
       h4: "Apprenez à me connaître !",
-      p2: `Je suis un développeur web spécialisé dans le Frontend, construisant et gérant la partie visible des sites et applications web pour garantir la réussite du produit final.  
-Découvrez certains de mes travaux dans la section Projets.  
-J'aime aussi partager du contenu lié au développement web afin d'aider d'autres personnes de la communauté.  
-N'hésitez pas à me suivre sur LinkedIn et Instagram, où je publie du contenu utile sur le développement et la programmation.  
-Je suis ouvert à de nouvelles opportunités professionnelles où je peux contribuer, apprendre et évoluer.  
-Si vous avez une opportunité correspondant à mes compétences et mon expérience, n'hésitez pas à me contacter.`,
+      p2: `Je suis un développeur web full-stack qui aime créer des projets de A à Z. J’aime résoudre des problèmes grâce à des solutions web. Je suis capable de travailler en équipe. J’apprécie aussi beaucoup l’UI/UX, même si je n’ai pas de formation spécifique dans ce domaine. Je recherche actuellement un poste en React/Next.js, mais je reste ouvert à d’autres opportunités professionnelles. J’aime apprendre, progresser et me tenir informé des nouveautés pour rester à jour.`,
       button: "Me contacter",
       skills: "Mes compétences",
       showMore: "Voir plus",
@@ -206,7 +201,8 @@ Si vous avez une opportunité correspondant à mes compétences et mon expérien
     },
     notFound: {
       title: "Page introuvable",
-      message: "Oups ! La page que vous recherchez n'existe pas ou a été déplacée.",
+      message:
+        "Oups ! La page que vous recherchez n'existe pas ou a été déplacée.",
       button: "Retour à l'accueil",
     },
   },
@@ -228,12 +224,7 @@ Si vous avez une opportunité correspondant à mes compétences et mon expérien
       h3: "About me",
       p: "I'm Andréa DUHAMEL, a passionate web developer who loves creating websites and web applications.",
       h4: "Get to know me!",
-      p2: `I'm a Frontend-focused web developer building and managing the front end of websites and web applications that contribute to the overall success of the product.  
-Check out some of my work in the Projects section.  
-I also enjoy sharing content related to what I've learned over the years in web development to help others in the dev community.  
-Feel free to connect or follow me on LinkedIn and Instagram, where I post useful content about web development and programming.  
-I'm open to job opportunities where I can contribute, learn, and grow.  
-If you have a good opportunity that matches my skills and experience, don't hesitate to contact me.`,
+      p2: `I’m a full-stack web developer who enjoys building projects from start to finish. I like solving problems using web-based solutions. I’m able to work effectively in a team. I’m also very interested in UI/UX, even though I don’t have formal training in that area. I’m currently looking for a position working with React or Next.js, but I’m open to other professional opportunities. I enjoy learning, improving, and staying up to date with the latest developments.`,
       button: "Contact me",
       skills: "My skills",
       showMore: "Show more",
@@ -314,7 +305,8 @@ If you have a good opportunity that matches my skills and experience, don't hesi
     },
     notFound: {
       title: "Page not found",
-      message: "Oops! The page you're looking for doesn't exist or has been moved.",
+      message:
+        "Oops! The page you're looking for doesn't exist or has been moved.",
       button: "Back to home",
     },
   },

@@ -40,8 +40,8 @@ export const projects: Project[] = [
       en: "Crazee Burger",
     },
     description: {
-      fr: "Un site de commande de burger avec gestion des produits, panier d'achat et système de paiement. Utilise React pour l'interface utilisateur et Node.js pour le backend.",
-      en: "A burger ordering site with product management, shopping cart, and payment system. Uses React for the user interface and Node.js for the backend.",
+      fr: "Un site factive de commande de burger avec gestion des produits, panier d'achat. Utilise React pour l'interface utilisateur, intégration de maquette figma.",
+      en: "A mock burger ordering website with product management and shopping cart. Uses React for the user interface, integration of Figma mockups",
     },
     imageSrc: "/crazee.png",
     skillIds: [
@@ -64,8 +64,8 @@ export const projects: Project[] = [
       en: "My old grimoire",
     },
     description: {
-      fr: "Un site de gestion de grimoire avec gestion des produits, panier d'achat et système de paiement. Utilise MongoDB pour la base de données et Node.js pour le backend.",
-      en: "A grimoire management site with product management, shopping cart, and payment system. Uses MongoDB for the database and Node.js for the backend.",
+      fr: "Un site factice de gestion de livres avec notation. Utilise MongoDB pour la base de données et Node.js pour le backend.",
+      en: "A mock book management site with ratings. Uses MongoDB for the database and Node.js for the backend.",
     },
     imageSrc: "/mvg.png",
     skillIds: ["mongodb", "node"],
